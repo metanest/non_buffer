@@ -2,7 +2,7 @@
 
 == What's This?
 
-A implementation of synchronous (non buffering) one-to-one
+An implementation of synchronous (non buffering) one-to-one
 communication by Ruby.
 
 I mean to use for one-to-one channel of CSP(Communicating
