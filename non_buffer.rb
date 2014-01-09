@@ -29,7 +29,7 @@ class NonBuffer
         tmp = @buf
         @buf = nil
         @cv.signal
-        while @stat == :FINAL
+        while @stat == :FINAL do
           @cv.wait @m
         end
       else
@@ -62,7 +62,7 @@ class NonBuffer
         @stat = :FINAL
         @buf = args
         @cv.signal
-        while @stat == :FINAL
+        while @stat == :FINAL do
           @cv.wait @m
         end
       when :WRITING then
